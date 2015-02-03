@@ -1,0 +1,10 @@
+<h2>Posts Section</h2>
+{{#each post in model}}
+<p>
+  {{post.title}}
+</p>
+{{post.body}}
+{{#link-to 'post' post}}show{{/link-to}}
+{{/each}}
+
+{{#link-to 'posts.new'}}new{{/link-to}}
