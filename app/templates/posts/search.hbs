@@ -1,0 +1,9 @@
+{{#each post in model}}
+<p>{{post.title}}</p>
+{{/each}}
+
+{{textarea value=q}}
+<button {{action 'doSearch'}}>search</button>
+<p>
+  the users searched for.. {{q}}
+</p>
